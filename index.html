@@ -9,72 +9,84 @@
 </head>
 
 <body>
-    <h1>Formulário</h1>
-
-    <form action="">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" required><br>
-            <label for="adress">Endereço</label>
-            <input type="text" name="adress" id="adress" required><br>
-            <label for="city">Cidade</label>
-            <input type="text" name="city" id="city" required><br>
-            <label for="state">Estado</label>
-            <select name="state" id="state" required>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP" selected>São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Dados Profissionais</legend>
-            <label for="job">Natureza do Cargo</label><br>
-            <label for="gerency"><input type="radio" name="j" id="gerency" checked>Agência</input></label>
-            <label for="agency"><input type="radio" name="j" id="agency">Financeiro</input></label>
-            <label for="reception"><input type="radio" name="j" id="reception">Recepção</input></label>
-            <label for="admin"><input type="radio" name="j" id="admin">Administrativo</input></label>
-            <label for="juridic"><input type="radio" name="j" id="juridic">Jurídico</input></label><br><br>
-
-            <label for="job">Área Interesse</label><br>
-            <label for="computer"><input type="checkbox" name="Computação" id="computer">Computação</input></label>
-            <label for="biology"><input type="checkbox" name="Biologia" id="biology">Biologia</input></label>
-            <label for="ma"><input type="checkbox" name="Meio Ambiente" id="ma">Meio Ambiente</input></label>
-            <label for="engenering"><input type="checkbox" name="Engenharia" id="engenering">Engenharia</input></label>
-            <label for="history"><input type="checkbox" name="História" id="history">História</input></label>
-            <br><br>
-            <label for="Mini-curriculo">Mini-curriculo</label><br>
-            <textarea cols="50" rows="10" name="curriculo" id="curriculo" required></textarea>
-        </fieldset>
-        <br>
-        <input type="submit" value="Enviar">
-        <button type="button">Limpar</button>
-    </form>
+    <div class="container">
+        <div class="title">
+            <h1>Formulário</h1>
+        </div>
+        <form action="">
+            <fieldset class="fieldset1">
+                <p>Dados pessoais</p>
+                <div class="inputs">
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="inputs">
+                    <label for="adress">Endereço: </label>
+                    <input type="text" name="adress" id="adress" required>
+                </div>
+                <div class="inputCity">
+                    <label for="state">Cidade</label>
+                    <select name="state" id="state" required>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <fieldset class="fieldset2">
+                <p>Dados profissionais</p>
+                <div><label for="job">Natureza do Cargo</label></div>
+                <div class="data1">
+                    <div class="inputs2"><label for="gerency"><input type="radio" name="j" id="gerency" checked>Gerência</input></label></div>
+                    <div class="inputs2"><label for="agency"><input type="radio" name="j" id="agency">Financeiro</input></label></div>
+                    <div class="inputs2"><label for="reception"><input type="radio" name="j" id="reception">Recepção</input></label></div>
+                    <div class="inputs2"><label for="juridic"><input type="radio" name="j" id="juridic">Jurídico</input></label></div>
+                </div>
+                <div><label for="job">Área Interesse</label></div>
+                <div class="data2">
+                    <div class="inputs2"><label for="computer"><input type="checkbox" name="Computação" id="computer">Computação</input></label></div>
+                    <div class="inputs2"><label for="biology"><input type="checkbox" name="Biologia" id="biology">Biologia</input></label></div>
+                    <div class="inputs2"><label for="ma"><input type="checkbox" name="Meio Ambiente" id="ma">Meio Ambiente</input></label></div>
+                    <div class="inputs2"><label for="engenering"><input type="checkbox" name="Engenharia" id="engenering">Engenharia</input></label></div>
+                    
+                </div>
+                <div class="curriculo">
+                    <label for="Mini-curriculo">Mini-curriculo:</label>
+                    <textarea cols="30" rows="4" name="curriculo" id="curriculo" required></textarea>
+                </div>
+                <div class="botoes">
+                    <input type="submit" value="Enviar">
+                    <button type="button">Limpar</button>
+                </div>
+            </fieldset>
+            
+        </form>
+    </div>
 </body>
 
 </html>

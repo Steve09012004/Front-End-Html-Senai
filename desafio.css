@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: lightblue;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.title {
+    width: 100%;
+}
+
+p {
+    font-weight: bolder;
+    margin-bottom: 7px;
+}
+
+form {
+    width: 100%;
+}
+
+.fieldset1 input {
+    width: 135px;
+    height: 25px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+fieldset {
+    width: 100%;
+    background: lightblue;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+}
+
+
+
+.inputs {
+    margin: 2px;
+}
+
+.inputCity select {
+    height: 25px;
+    margin: 3px;
+}
+
+.data1>div, .data2> div {
+    margin-bottom: 7px;
+}
+
+.data1, .data2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inputs2 {
+    margin-right: 10px;
+}
+
+.inputs2 label input {
+    margin-right: 7px;
+}
+
+.inputs2 label input:checked {
+    accent-color: blue;
+}
+
+.curriculo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curriculo label{
+    margin-right: 0px;
+    margin-top: 15px;
+    width: 35%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 13px ;
+}
+
+.botoes input {
+    color: white;
+    background: blue;
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.botoes button {
+    color: black;
+    background: rgb(225, 225, 225);
+    height: 30px;
+    width: 70px;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 4px;
+    margin-right: 5px;
+}
