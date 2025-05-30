@@ -1,19 +1,232 @@
-.polonia {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: aqua;
     width: 100%;
-    height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-.bandeira div:nth-child(1) {
-    width: 500px;
-    height: 300px;
-    color: white;
+.bandeira {
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
 }
-.bandeira div:nth-child(2) {
-    width: 500px;
-    height: 300px;
-    background: red;
+
+.polonia,
+.italia,
+.japao,
+.suecia,
+.trinidad,
+.Guine,
+.kuwait {
+    width: 100%;
+    height: 100%;
+}
+
+.italia,
+.japao {
+    display: flex;
+}
+
+
+.polonia>div:nth-child(1) {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+}
+
+.polonia>div:nth-child(2) {
+    background-color: red;
+    width: 100%;
+    height: 50%;
+}
+
+
+.italia>div:nth-child(1) {
+    background-color: green;
+    width: 33%;
+    height: 100%;
+}
+
+.italia>div:nth-child(2) {
+    background-color: white;
+    width: 33%;
+    height: 100%;
+}
+
+.italia>div:nth-child(3) {
+    background-color: red;
+    width: 33%;
+    height: 100%;
+}
+
+
+.japao>div:nth-child(1) {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.japao>div:nth-child(1) .ball {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.suecia>div:nth-child(1) {
+    background-color: #295683;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.suecia .barra1 {
+    background-color: orange;
+    width: 45px;
+    height: 100%;
+    margin-left: 25%;
+}
+
+.suecia .barra2 {
+    background-color: orange;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+}
+
+.trinidad>div:nth-child(1) {
+    background-color: rgb(198, 11, 11);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.trinidad .barra1 {
+    width: 45px;
+    height: 230%;
+    background-color: black;
+    border: 5px solid white;
+    transform: rotate(120deg);
+}
+
+.Guine {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Guine .star {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(157, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.star .icon {
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+.Guine .colors {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Guine .colors div:nth-child(1) {
+    width: 100%;
+    height: 50%;
+    background-color: #f7d954;
+}
+
+.Guine .colors div:nth-child(2) {
+    width: 100%;
+    height: 50%;
+    background-color: #099909;
+}
+
+.kuwait {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.kuwait div:nth-child(1) {
+    width: 100%;
+    height: 33%;
+    background-color: #257e25;
+}
+
+.kuwait div:nth-child(2) {
+    width: 100%;
+    height: 33%;
+    background-color: white;
+}
+
+.kuwait div:nth-child(3) {
+    width: 100%;
+    height: 33%;
+    background-color: red;
+}
+
+.blackBlock {
+    position: absolute;
+    width: 80px;
+    height: 33%;
+    background-color: black;
+    margin-right: 80%;
+}
+
+.blackBlock::before {
+    transform: rotate(40deg);
+    position: inherit;
+    content: '';
+    background: black;
+    width: 110px;
+    height: 134%;
+    /* padding: 13px; */
+    top: -45px;
+    right: 16px;
+}
+
+.blackBlock::after {
+    transform: rotate(-40deg);
+    position: inherit;
+    content: '';
+    background: black;
+    width: 110px;
+    height: 134%;
+    /* padding: 13px; */
+    top: 23px;
+    right: 16px;
 }
