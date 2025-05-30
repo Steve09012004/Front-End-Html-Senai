@@ -1,0 +1,19 @@
+.polonia {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bandeira div:nth-child(1) {
+    width: 500px;
+    height: 300px;
+    color: white;
+}
+.bandeira div:nth-child(2) {
+    width: 500px;
+    height: 300px;
+    background: red;
+}
