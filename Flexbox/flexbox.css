@@ -8,9 +8,11 @@
 body {
     background-color: aqua;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
@@ -19,6 +21,9 @@ body {
     margin-right: 10px;
     width: 400px;
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .polonia,
@@ -29,7 +34,8 @@ body {
 .Guine,
 .kuwait,
 .grecia,
-.brasil {
+.brasil,
+.macedonia {
     width: 100%;
     height: 100%;
 }
@@ -205,34 +211,32 @@ body {
 
 .blackBlock {
     position: absolute;
-    width: 80px;
+    width: 30%;
     height: 33%;
     background-color: black;
     margin-right: 80%;
 }
 
 .blackBlock::before {
-    transform: rotate(40deg);
+    transform: rotate(33deg);
     position: inherit;
     content: '';
     background: black;
-    width: 110px;
-    height: 134%;
-    /* padding: 13px; */
-    top: -45px;
-    right: 16px;
+    width: 100%;
+    height: 100%;
+    top: -58.5%;
+    right: 6.9%;
 }
 
 .blackBlock::after {
-    transform: rotate(-40deg);
+    transform: rotate(-33.5deg);
     position: inherit;
     content: '';
     background: black;
-    width: 110px;
-    height: 134%;
-    /* padding: 13px; */
-    top: 23px;
-    right: 16px;
+    width: 100%;
+    height: 100%;
+    top: 58.7%;
+    right: 6.8%;
 }
 
 .grecia {
@@ -650,9 +654,157 @@ body {
     left: 42.5%;
     font-size: 4px;
 }
+
 .losangulo .ball .stars-box .stars .s_27 {
     position: absolute;
     top: 58%;
     left: 52.5%;
     font-size: 5.5px;
+}
+
+.macedonia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA2025;
+}
+
+.macedonia .ball {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: #F3E944;
+    z-index: 2;
+    outline: 1rem solid #BA2025;
+}
+
+.macedonia .barras-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.macedonia .barras-box .barraBox {
+    top: 12.5%;
+    left: -6%;
+    transform: rotate(32deg);
+    position: absolute;
+    background-color: #F3E944;
+    width: 57%;
+    height: 6.25%;
+}
+
+.macedonia .barras-box .barraBox::before {
+    content: '';
+    top: 85%;
+    left: 5%;
+    transform: rotate(-7deg);
+    position: absolute;
+    background-color: #F3E944;
+    width: 100%;
+    height: 100%;
+}
+
+.macedonia .barras-box .barraBox::after {
+    content: '';
+    top: 82%;
+    left: -30%;
+    transform: rotate(-4deg);
+    position: absolute;
+    background-color: #F3E944;
+    width: 100%;
+    height: 125%;
+}
+
+#barraBox2 {
+    transform: rotate(112deg);
+    top: -30%;
+    left: 31.5%;
+}
+
+#barraBox2::before {
+    content: '';
+    top: 860%;
+    left: -8%;
+    transform: rotate(-48deg);
+    position: absolute;
+    width: 127%;
+    height: 100%;
+}
+
+#barraBox2::after {
+    content: '';
+    top: 347%;
+    left: -22%;
+    border-radius: 30%;
+    transform: rotate(-23deg);
+    position: absolute;
+    width: 119%;
+    height: 365%;
+}
+
+#barraBox3 {
+    transform: rotate(-204deg);
+    left: 46%;
+    top: 20.5%;
+}
+
+#barraBox4 {
+    transform: rotate(183deg);
+    left: 56%;
+    top: 51%;
+}
+
+#barraBox5 {
+    transform: rotate(211deg);
+    left: 46.5%;
+    top: 81%;
+}
+
+
+#barraBox6 {
+    transform: rotate(-66deg);
+    top: 123%;
+    left: 10%
+}
+
+#barraBox6::before {
+    content: '';
+    top: 860%;
+    left: -8%;
+    transform: rotate(-48deg);
+    position: absolute;
+    width: 126.5%;
+    height: 108%;
+}
+
+#barraBox6::after {
+    content: '';
+    top: 347%;
+    left: -22%;
+    border-radius: 30%;
+    transform: rotate(-23deg);
+    position: absolute;
+    width: 119%;
+    height: 365%;
+}
+
+
+
+#barraBox7 {
+    transform: rotate(-25deg);
+    left: -7%;
+    top: 77%;
+}
+
+
+#barraBox8 {
+    transform: rotate(364deg);
+    left: -12%;
+    top: 44%;
 }
