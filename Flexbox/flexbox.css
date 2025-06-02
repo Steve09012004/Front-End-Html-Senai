@@ -6,14 +6,15 @@
 }
 
 body {
-    background-color: aqua;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
+    background: radial-gradient( #151535, #151535,#151535, #094b09);
+    color: white;
 }
 
 .bandeira {
@@ -22,8 +23,10 @@ body {
     width: 400px;
     height: 200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow:5px 5px 25px #1e7e1e;
 }
 
 .polonia,
@@ -35,7 +38,8 @@ body {
 .kuwait,
 .grecia,
 .brasil,
-.macedonia {
+.macedonia,
+.macedonia2 {
     width: 100%;
     height: 100%;
 }
@@ -43,6 +47,8 @@ body {
 .italia,
 .japao {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -157,6 +163,7 @@ body {
 .star .icon {
     font-size: 80px;
     margin-bottom: 25px;
+    color: black;
 }
 
 .Guine .colors {
@@ -807,4 +814,38 @@ body {
     transform: rotate(364deg);
     left: -12%;
     top: 44%;
+}
+
+.macedonia2 {
+    background: conic-gradient(
+        #F3E944 0deg 13.84deg,
+         #BA2025 13.84deg 55.36deg,
+         #F3E944 55.36deg 69.2deg,
+        #BA2025 69.2deg 83.04deg,
+        #F3E944 83.04deg 96.88deg,
+        #BA2025 96.88deg 110.72deg,
+        #F3E944 110.72deg 124.56deg,
+         #BA2025 124.56deg 166.08deg,
+        #F3E944 166.08deg 193.76deg,
+         #BA2025 193.76deg 235.28deg,
+        #F3E944 235.28deg 249.12deg,
+         #BA2025 249.12deg 262.96deg,
+        #F3E944 262.96deg 276.8deg,
+         #BA2025 276.8deg 290.64deg,
+        #F3E944 290.64deg 304.48deg,
+        #BA2025 304.48deg 318.32deg,
+        #BA2025 0deg 346deg,
+        #F3E944 346deg 0deg
+);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.macedonia2 .ball {
+    width: 14%;
+    height: 28%;
+    border-radius: 50%;
+    background-color: #F3E944;
+    outline: 0.5rem solid #BA2025;
 }
