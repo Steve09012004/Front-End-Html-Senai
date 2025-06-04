@@ -1,0 +1,851 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: radial-gradient( #151535, #151535,#151535, #094b09);
+    color: white;
+}
+
+.bandeira {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:5px 5px 25px #1e7e1e;
+}
+
+.polonia,
+.italia,
+.japao,
+.suecia,
+.trinidad,
+.Guine,
+.kuwait,
+.grecia,
+.brasil,
+.macedonia,
+.macedonia2 {
+    width: 100%;
+    height: 100%;
+}
+
+.italia,
+.japao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.polonia>div:nth-child(1) {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+}
+
+.polonia>div:nth-child(2) {
+    background-color: red;
+    width: 100%;
+    height: 50%;
+}
+
+
+.italia>div:nth-child(1) {
+    background-color: green;
+    width: 33%;
+    height: 100%;
+}
+
+.italia>div:nth-child(2) {
+    background-color: white;
+    width: 33%;
+    height: 100%;
+}
+
+.italia>div:nth-child(3) {
+    background-color: red;
+    width: 33%;
+    height: 100%;
+}
+
+
+.japao>div:nth-child(1) {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.japao>div:nth-child(1) .ball {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.suecia>div:nth-child(1) {
+    background-color: #295683;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.suecia .barra1 {
+    background-color: orange;
+    width: 45px;
+    height: 100%;
+    margin-left: 25%;
+}
+
+.suecia .barra2 {
+    background-color: orange;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+}
+
+.trinidad>div:nth-child(1) {
+    background-color: rgb(198, 11, 11);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.trinidad .barra1 {
+    width: 45px;
+    height: 230%;
+    background-color: black;
+    border: 5px solid white;
+    transform: rotate(120deg);
+}
+
+.Guine {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Guine .star {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(157, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.star .icon {
+    font-size: 80px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.Guine .colors {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Guine .colors div:nth-child(1) {
+    width: 100%;
+    height: 50%;
+    background-color: #f7d954;
+}
+
+.Guine .colors div:nth-child(2) {
+    width: 100%;
+    height: 50%;
+    background-color: #099909;
+}
+
+.kuwait {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.kuwait div:nth-child(1) {
+    width: 100%;
+    height: 33%;
+    background-color: #257e25;
+}
+
+.kuwait div:nth-child(2) {
+    width: 100%;
+    height: 33%;
+    background-color: white;
+}
+
+.kuwait div:nth-child(3) {
+    width: 100%;
+    height: 33%;
+    background-color: red;
+}
+
+.blackBlock {
+    position: absolute;
+    width: 30%;
+    height: 33%;
+    background-color: black;
+    margin-right: 80%;
+}
+
+.blackBlock::before {
+    transform: rotate(33deg);
+    position: inherit;
+    content: '';
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: -58.5%;
+    right: 6.9%;
+}
+
+.blackBlock::after {
+    transform: rotate(-33.5deg);
+    position: inherit;
+    content: '';
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 58.7%;
+    right: 6.8%;
+}
+
+.grecia {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.grecia .listras-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listras-box .listras {
+    width: 100%;
+    height: 12%;
+    background-color: #2672be;
+}
+
+.grecia .left-block {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    height: 56%;
+    background-color: #2672be;
+    top: 0;
+    left: 0;
+}
+
+.left-block .barra1 {
+    width: 20.6%;
+    height: 100%;
+    background-color: white;
+
+}
+
+.left-block .barra2 {
+    width: 100%;
+    height: 20.6%;
+    background-color: white;
+    position: absolute;
+}
+
+.brasil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0dc40d;
+}
+
+.brasil .losangulo-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(136deg);
+}
+
+.brasil .losangulo-box .losangulo {
+    width: 43%;
+    height: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(20deg, 20deg);
+    background-color: yellow;
+}
+
+.brasil .losangulo-box .losangulo .ball {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(-136deg);
+    background-color: #2a2af1;
+    overflow: hidden;
+}
+
+.brasil .losangulo-box .losangulo .ball .title {
+    min-width: 130%;
+    height: 59%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+    border-radius: 200%;
+    transform: skew(0deg, 20deg);
+    background-color: white;
+}
+
+.brasil .losangulo-box .losangulo .ball .title span {
+    position: absolute;
+    bottom: 100%;
+    left: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+
+    text-align: center;
+    color: #188618;
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(1) {
+    top: 18px;
+    right: 110.5px;
+    transform: rotate(165deg);
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(2) {
+    top: 15px;
+    right: 99px;
+    transform: rotate(-19deg);
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(3) {
+    top: 12px;
+    right: 87px;
+    transform: rotate(-20deg);
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(4) {
+    top: 10.7px;
+    right: 75px;
+    transform: rotate(-13deg);
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(5) {
+    top: 9px;
+    right: 61px;
+    transform: rotate(-7deg);
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(6) {
+    top: 7.5px;
+    right: 43px;
+    transform: rotate(-7deg);
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(7) {
+    top: 7px;
+    right: 28px;
+    transform: rotate(-1deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(8) {
+    top: 7px;
+    right: 16px;
+    transform: rotate(6deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(9) {
+    top: 8px;
+    right: 3px;
+    transform: rotate(12deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(10) {
+    top: 9px;
+    right: -11px;
+    transform: rotate(14deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(11) {
+    top: 11px;
+    right: -24px;
+    transform: rotate(15deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(12) {
+    top: 13px;
+    right: -36px;
+    transform: rotate(20deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(13) {
+    top: 16px;
+    right: -48px;
+    transform: rotate(25deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(14) {
+    top: 19px;
+    right: -59px;
+    transform: rotate(29deg)
+}
+
+.brasil .losangulo-box .losangulo .ball .title span:nth-child(15) {
+    top: 23px;
+    right: -71px;
+    transform: rotate(23deg)
+}
+
+.losangulo .ball .title::after {
+    content: '';
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    top: 14%;
+    border-radius: 200%;
+    transform: skew(0deg, 2deg);
+    background-color: #2a2af1;
+
+}
+
+.losangulo .ball .stars-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.losangulo .ball .stars-box .stars .s_1 {
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars .s_2 {
+    position: absolute;
+    top: 43%;
+    left: 60%;
+    font-size: 4.5px;
+}
+
+.losangulo .ball .stars-box .stars .s_3 {
+    position: absolute;
+    top: 37%;
+    left: 8%;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars .s_4 {
+    position: absolute;
+    top: 62%;
+    left: 92%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_5 {
+    position: absolute;
+    top: 60%;
+    left: 83%;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars .s_6 {
+    position: absolute;
+    top: 66%;
+    left: 86%;
+    font-size: 5px;
+}
+
+
+.losangulo .ball .stars-box .stars .s_7 {
+    position: absolute;
+    top: 69%;
+    left: 83%;
+    font-size: 5px;
+}
+
+.losangulo .ball .stars-box .stars .s_8 {
+    position: absolute;
+    top: 72%;
+    left: 78%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_9 {
+    position: absolute;
+    top: 70.5%;
+    left: 73%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_10 {
+    position: absolute;
+    top: 76.5%;
+    left: 72.5%;
+    font-size: 6px;
+}
+
+.losangulo .ball .stars-box .stars .s_11 {
+    position: absolute;
+    top: 84%;
+    left: 73.5%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_12 {
+    position: absolute;
+    top: 72.8%;
+    left: 67%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_13 {
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    font-size: 5.5px;
+}
+
+.losangulo .ball .stars-box .stars .s_14 {
+    position: absolute;
+    top: 78.5%;
+    left: 61%;
+    font-size: 6px;
+}
+
+.losangulo .ball .stars-box .stars .s_15 {
+    position: absolute;
+    top: 87%;
+    left: 48%;
+    font-size: 2px;
+}
+
+.losangulo .ball .stars-box .stars .s_16 {
+    position: absolute;
+    top: 49%;
+    left: 30%;
+    font-size: 6px;
+}
+
+.losangulo .ball .stars-box .stars .s_17 {
+    position: absolute;
+    top: 59%;
+    left: 19%;
+    font-size: 3px;
+}
+
+.losangulo .ball .stars-box .stars .s_18 {
+    position: absolute;
+    top: 60.5%;
+    left: 12%;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars .s_19 {
+    position: absolute;
+    top: 66%;
+    left: 6%;
+    font-size: 6px;
+}
+
+.losangulo .ball .stars-box .stars .s_20 {
+    position: absolute;
+    top: 67.6%;
+    left: 23%;
+    font-size: 6px;
+}
+
+.losangulo .ball .stars-box .stars .s_21 {
+    position: absolute;
+    top: 73.5%;
+    left: 22%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_22 {
+    position: absolute;
+    top: 77%;
+    left: 28.5%;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars .s_23 {
+    position: absolute;
+    top: 67%;
+    left: 45.5%;
+    font-size: 7px;
+}
+
+.losangulo .ball .stars-box .stars .s_24 {
+    position: absolute;
+    top: 62%;
+    left: 45%;
+    font-size: 3px;
+}
+
+.losangulo .ball .stars-box .stars .s_25 {
+    position: absolute;
+    top: 55%;
+    left: 47%;
+    font-size: 5.5px;
+}
+
+.losangulo .ball .stars-box .stars .s_26 {
+    position: absolute;
+    top: 58.4%;
+    left: 42.5%;
+    font-size: 4px;
+}
+
+.losangulo .ball .stars-box .stars .s_27 {
+    position: absolute;
+    top: 58%;
+    left: 52.5%;
+    font-size: 5.5px;
+}
+
+.macedonia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA2025;
+}
+
+.macedonia .ball {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: #F3E944;
+    z-index: 2;
+    outline: 1rem solid #BA2025;
+}
+
+.macedonia .barras-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.macedonia .barras-box .barraBox {
+    top: 12.5%;
+    left: -6%;
+    transform: rotate(32deg);
+    position: absolute;
+    background-color: #F3E944;
+    width: 57%;
+    height: 6.25%;
+}
+
+.macedonia .barras-box .barraBox::before {
+    content: '';
+    top: 85%;
+    left: 5%;
+    transform: rotate(-7deg);
+    position: absolute;
+    background-color: #F3E944;
+    width: 100%;
+    height: 100%;
+}
+
+.macedonia .barras-box .barraBox::after {
+    content: '';
+    top: 82%;
+    left: -30%;
+    transform: rotate(-4deg);
+    position: absolute;
+    background-color: #F3E944;
+    width: 100%;
+    height: 125%;
+}
+
+#barraBox2 {
+    transform: rotate(112deg);
+    top: -30%;
+    left: 31.5%;
+}
+
+#barraBox2::before {
+    content: '';
+    top: 860%;
+    left: -8%;
+    transform: rotate(-48deg);
+    position: absolute;
+    width: 127%;
+    height: 100%;
+}
+
+#barraBox2::after {
+    content: '';
+    top: 347%;
+    left: -22%;
+    border-radius: 30%;
+    transform: rotate(-23deg);
+    position: absolute;
+    width: 119%;
+    height: 365%;
+}
+
+#barraBox3 {
+    transform: rotate(-204deg);
+    left: 46%;
+    top: 20.5%;
+}
+
+#barraBox4 {
+    transform: rotate(183deg);
+    left: 56%;
+    top: 51%;
+}
+
+#barraBox5 {
+    transform: rotate(211deg);
+    left: 46.5%;
+    top: 81%;
+}
+
+
+#barraBox6 {
+    transform: rotate(-66deg);
+    top: 123%;
+    left: 10%
+}
+
+#barraBox6::before {
+    content: '';
+    top: 860%;
+    left: -8%;
+    transform: rotate(-48deg);
+    position: absolute;
+    width: 126.5%;
+    height: 108%;
+}
+
+#barraBox6::after {
+    content: '';
+    top: 347%;
+    left: -22%;
+    border-radius: 30%;
+    transform: rotate(-23deg);
+    position: absolute;
+    width: 119%;
+    height: 365%;
+}
+
+
+
+#barraBox7 {
+    transform: rotate(-25deg);
+    left: -7%;
+    top: 77%;
+}
+
+
+#barraBox8 {
+    transform: rotate(364deg);
+    left: -12%;
+    top: 44%;
+}
+
+.macedonia2 {
+    background: conic-gradient(
+        #F3E944 0deg 13.84deg,
+         #BA2025 13.84deg 55.36deg,
+         #F3E944 55.36deg 69.2deg,
+        #BA2025 69.2deg 83.04deg,
+        #F3E944 83.04deg 96.88deg,
+        #BA2025 96.88deg 110.72deg,
+        #F3E944 110.72deg 124.56deg,
+         #BA2025 124.56deg 166.08deg,
+        #F3E944 166.08deg 193.76deg,
+         #BA2025 193.76deg 235.28deg,
+        #F3E944 235.28deg 249.12deg,
+         #BA2025 249.12deg 262.96deg,
+        #F3E944 262.96deg 276.8deg,
+         #BA2025 276.8deg 290.64deg,
+        #F3E944 290.64deg 304.48deg,
+        #BA2025 304.48deg 318.32deg,
+        #BA2025 0deg 346deg,
+        #F3E944 346deg 0deg
+);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.macedonia2 .ball {
+    width: 14%;
+    height: 28%;
+    border-radius: 50%;
+    background-color: #F3E944;
+    outline: 0.5rem solid #BA2025;
+}
