@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #412a2a;
+}
+
+.bandeira {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50px;
+
+    && .grabetanha {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: rgb(59, 59, 152);
+
+        && .barras {
+            z-index: 1;
+            border-top: 18px solid white;
+            border-bottom: 5px solid white;
+            width: 55%;
+            height: 41px;
+        }
+
+        && .barra1 {
+            position: absolute;
+            background-color: #d53232;
+            transform: rotate(29deg);
+            top: 15%;
+            right: 54%;
+        }
+
+        && .barra2 {
+            position: absolute;
+            background-color: #d53232;
+            transform: rotate(-32deg);
+            top: 74%;
+            right: 54%;
+        }
+
+        && .barra3 {
+            position: absolute;
+            background-color: #d53232;
+            transform: rotate(147deg);
+            top: 14%;
+            right: -7%;
+        }
+
+        && .barra4 {
+            position: absolute;
+            background-color: #d53232;
+            transform: rotate(210deg);
+            top: 73%;
+            right: -9%;
+        }
+    }
+
+    && .ball-box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    && .ball {
+        position: absolute;
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        margin: auto;
+        background: white;
+    }
+
+    .cruz {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+
+        && div:nth-child(1) {
+            position: absolute;
+            width: 100%;
+            height: 3.5rem;
+            background-color: #d53232;
+            border-top: 8px solid white;
+            border-bottom: 8px solid white;
+            z-index: 3;
+        }
+
+        && div:nth-child(2) {
+            position: absolute;
+            width: 3.5rem;
+            height: 100%;
+            background-color: #d53232;
+            border-left: 8px solid white;
+            border-right: 8px solid white;
+            z-index: 3;
+        }
+
+        && div:nth-child(2)::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d53232;
+            transform: rotate(90deg);
+        }
+    }
+
+}
