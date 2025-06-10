@@ -52,11 +52,12 @@ ul {
         height: 50px;
         margin-bottom: 20px;
         border-radius: 25px;
-        transition: background 0.5s;
+        transition: background 0.5s, color 0.5s;
     }
 
     && button:hover {
         background: #1B65A6;
+        color: white;
         cursor: pointer;
         
     }
