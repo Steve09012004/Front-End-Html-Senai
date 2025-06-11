@@ -197,7 +197,7 @@ function EX05() {
 
 function EX06() {
     let andares = prompt("Quantos andares: ")
-    let passar = false
+    let string = ""
 
 
     alert("Pressione Ctrl + Shift + I para continuar")
@@ -205,31 +205,35 @@ function EX06() {
 
     for (let i = 1; i <= andares; i++) {
         for (let x = andares - i; x > 0; x--) {
-            console.log(" ")
+            string += (" ")
         }
         for (let j = 1; j <= (i * 2) - 1; j++) {
-            console.log("*")
+            string += ("*")
         }
-        console.log("")
+        string += ("\n")
     }
 
+
+    return console.log("\n" + string)
 }
 
 function EX07() {
 
     let altura = prompt("Escreva altura: ")
     let largura = prompt("Largura: ")
-
+    let string = ""
 
     alert("Pressione Ctrl + Shift + I para continuar")
 
 
     for (let j = 1; j <= altura; j++) {
         for (let i = 1; i <= largura; i++) {
-            console.log("* ")
+            string += ("* ")
         }
-        console.log("\n")
+        string += ("\n")
     }
+
+    return console.log("\n" + string)
 }
 
 
