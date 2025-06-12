@@ -34,17 +34,17 @@ header {
 
 main {
     opacity: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 ul {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     && li {
         width: 100%;
@@ -67,6 +67,11 @@ ul {
     }
 
 }
+.ex05 {
+    justify-content: center;
+    align-items: center;
+}
+
 
 footer {
     width: 100%;
@@ -93,9 +98,24 @@ footer {
     flex-direction: row;
     justify-content: center;
     display: none;
+
+    && button {
+        position: absolute;
+        top: 75%;
+        width: 150px;
+        height: 50px;
+        border-radius: 30px;
+        border: 1px solid #1B65A6;
+        transition: background 0.5s, color 0.5s;
+    }
+    && button:hover {
+        color: white;
+        background: #1B65A6;
+        cursor: pointer;
+    }
 }
 
-#inputItem {
+#inputItem, #inputItemPrice {
     position: absolute;
     width: 80%;
     height: 90px;
@@ -103,7 +123,25 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     top: 50%;
+    border: 1px solid #1B65A6;
+    transform: rotate3d(0, 0, 0, 0deg);
+    transition: all 0.5s;
+}
+#inputItemPrice {
+    top: 63%;
+    height: 75px;
+    width: 35%;
+}
 
+#inputItem:focus, #inputItemPrice:focus {
+    transform: rotate3d(1, 91, 1, 35deg);
+}
+
+.icon, .icon2 {
+    transition: all 0.5s;
+}
+.icon:hover, .icon2:hover {
+    transform: rotate3d(1, 91, 1, 35deg);
 }
 
 .icon {

@@ -18,14 +18,15 @@
 
 
     <main id="main">
+        <div class="content">
+            <h1 id="content"></h1>
+        </div>
+        <div class="result">
+            <h1 id="result"></h1>
+        </div>
 
         <ul>
-            <div class="content">
-                <h1 id="content"></h1>
-            </div>
-            <div class="result">
-                <h1 id="result"></h1>
-            </div>
+            
             <li>
                 <button onclick="ex1()">Ex01
                 </button>
@@ -43,25 +44,18 @@
                 </button>
             </li>
             <li>
-                <ul id="ex05">
-                    <h3>Ex 05 - Lista de Compras</h3>
-                    <button onclick="inserirItem()">Inserir item</button>
-                    <button onclick="showList()">Ver Lista completa</button>
+        </ul>
+        <ul class="ex05Box">
+                <h3>Ex 05 - Lista de Compras</h3>
+                <button onclick="inserirItem()">Inserir item</button>
+                <button onclick="showList()">Ver Lista completa</button>
 
-                </ul>
-            </li>
-            <li>
-                <button onclick="ex6()">Ex06
-                </button>
-            </li>
-            <li>
-                <button onclick="ex7()">Ex07
-                </button>
-            </li>
+            </div>
         </ul>
     </main>
     <div id="hiddenItems">
-        <input type="text" id="inputItem" placeholder="Ex.: Maçã">
+        <input type="text" id="inputItem" placeholder="Item: Ex.: Maçã">
+        <input type="number" id="inputItemPrice" placeholder="Preço Ex.: 14,99">
         <button onclick="additem()">Adicionar</button>
         <span onclick="closeInput()" class="icon">❌</span>
     </div>

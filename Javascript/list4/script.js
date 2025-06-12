@@ -53,7 +53,7 @@ function ex4() {
   result.innerHTML = "Existem " + contador + " Números Pares"
 }
 
-let lista = ["Maça", "Banana", "Iogurte", "Batata", "Arroz"]
+let lista = [{"Maça": "15.99"}, {"Banana": "13.99"}, {"Iogurte": "12.99"}, {"Batata": "11.99"}, {"Arroz": "8.99"}]
 let quantidade = 0
 
 function ex5() {
@@ -69,9 +69,16 @@ function inserirItem() {
 }
 function additem() {
   item = document.getElementById("inputItem").value
+  itemPrice = document.getElementById("inputItemPrice").value
+  
 
   try {
-    lista.push(item)
+    lista.push({[item] : itemPrice})
+    lista = lista.sort((a, b) => {
+      let precoA = parseFloat(Object.values(a)[0]);
+      let precoB = parseFloat(Object.values(b)[0]);
+      return precoA - precoB; // ordem crescente
+    });
     div = document.querySelector(".success")
     div.style.display = 'block'
     input = document.getElementById("hiddenItems")
@@ -84,6 +91,7 @@ function additem() {
     input.style.display = 'none'
     document.getElementById("main").style.opacity = '1'
   }
+  let listaOrdenada = ordenarPorPreco(lista);
 }
 function closeInput() {
   input = document.getElementById("hiddenItems")
@@ -111,19 +119,33 @@ function closeList() {
   div.style.display = 'none'
   listaBox = document.getElementById("itemList")
   listaBox.innerHTML = ""
-
+  document.getElementById("main").style.opacity = '1'
 }
 
 
+function ordenarPorPreco(lista) {
+  return [...lista].sort((a, b) => {
+    let precoA = Object.values(a)[0];
+    let precoB = Object.values(b)[0];
+    return precoA - precoB;
+  });
+}
 
 function showList() {
+  let listaOrdenada = ordenarPorPreco(lista);
   div = document.getElementById("hiddenList")
   listaBox = document.getElementById("itemList")
   listaBox.innerHTML = "<span onclick='closeList()' class='icon3'>❌</span>"
   div.style.display = 'flex'
+  document.getElementById("main").style.opacity = '0.1'
 
-  for (let i = 0; i < lista.length; i++){
-    listaBox.innerHTML +="<li>" + lista[i] + ` <span class='iconTrash' onclick = 'removeItem(${i})'>🗑</span></li>`
+
+  for (let i = 0; i < listaOrdenada.length; i++){
+    let item = listaOrdenada[i]
+    for (let itemName in item){
+      let Price = item[itemName]
+      listaBox.innerHTML +="<li>" + itemName + " : " + Price + ` <span class='iconTrash' onclick = 'removeItem(${i})'>🗑</span></li>`
+    }
   }
 }
 
